@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #f7f4ee;
+  --foreground: #17211b;
+  --card: #fffdf8;
+  --card-foreground: #17211b;
+  --popover: #fffdf8;
+  --popover-foreground: #17211b;
+  --primary: #0c6b58;
+  --primary-foreground: #f5fff9;
+  --secondary: #e8efe9;
+  --secondary-foreground: #194236;
+  --muted: #eef0ea;
+  --muted-foreground: #6d776f;
+  --accent: #e3f3a4;
+  --accent-foreground: #23350e;
+  --destructive: #c65042;
+  --destructive-foreground: #fff8f4;
+  --border: #dde3d9;
+  --input: #d9e2d9;
+  --ring: #8ab9a3;
+  --radius: 1rem;
+}
+* { border-color: var(--border); }
+html { background: var(--background); }
+body { margin: 0; min-width: 320px; background: var(--background); color: var(--foreground); font-family: 'DM Sans', system-ui, sans-serif; }
+button, input, textarea, select { font: inherit; }
+button { transition: transform 160ms cubic-bezier(.23,1,.32,1), box-shadow 180ms ease, background-color 180ms ease; }
+button:active { transform: scale(.97); }
+.display { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -.045em; }
+.container { width: 100%; margin-inline: auto; padding-inline: 1.25rem; }
+@media (min-width: 768px) { .container { max-width: 1180px; padding-inline: 2rem; } }
+::selection { background: #e3f3a4; color: #23350e; }
